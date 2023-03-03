@@ -1,0 +1,48 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/manifest.json",
+    "type": "Manifest",
+    "label": { "en": [ "they can't take that away from me" ] },
+    "homepage": [
+      {
+        "id": "https://archive.org/details/78_they-cant-take-that-away-from-me_connie-boswell-victor-young-and-his-orchestra-geo_gbia0506932b",
+        "type": "Text",
+        "label": { "en": [ "they can't take that away from me" ] },
+        "format": "text/html"
+      }
+    ],
+    "provider": [
+      {
+        "id": "https://archive.org/",
+        "type": "Agent",
+        "label": { "en": [ "internet archives" ] }
+      }
+    ],
+    "items": [
+      {
+        "id": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/canvas-1/canvas",
+        "type": "Canvas",
+        "duration": 189.0,
+        "items": [
+          {
+            "id": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/canvas-1/paintings",
+            "type": "AnnotationPage",
+            "items": [
+              {
+                "id": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/canvas-1/painting",
+                "type": "Annotation",
+                "motivation": "painting",
+                "body": {
+                  "id": "https://archive.org/download/78_they-cant-take-that-away-from-me_connie-boswell-victor-young-and-his-orchestra-geo_gbia0506932b/THEY%20CAN%27T%20TAKE%20THAT%20AWAY%20FROM%20ME%20-%20CONNIE%20BOSWELL.mp3",
+                  "type": "Sound",
+                  "format": "audio/mp3",
+                    "duration": 189.0
+                },
+                "target": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/canvas-1/canvas"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+} 
