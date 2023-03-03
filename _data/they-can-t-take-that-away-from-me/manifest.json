@@ -23,6 +23,24 @@
         "id": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/canvas-1/canvas",
         "type": "Canvas",
         "duration": 189.0,
+        "annotations": [
+          
+          {
+            "type": "AnnotationPage",
+            "id": "https://jaimie-r.github.io/aa-theme-test-page-1/annotations/they-can-t-take-that-away-from-me-canvas-1-layer-1.json",
+            "label": {
+              "none": ["layer 1"]
+            }
+          }
+          ,
+          {
+            "type": "AnnotationPage",
+            "id": "https://jaimie-r.github.io/aa-theme-test-page-1/annotations/they-can-t-take-that-away-from-me-canvas-1-layer-2.json",
+            "label": {
+              "none": ["layer 2"]
+            }
+          }
+        ],
         "items": [
           {
             "id": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/canvas-1/paintings",

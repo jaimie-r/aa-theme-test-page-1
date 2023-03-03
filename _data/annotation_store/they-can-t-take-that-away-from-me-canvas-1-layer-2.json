@@ -1,0 +1,38 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://jaimie-r.github.io/aa-theme-test-page-1/annotations/they-can-t-take-that-away-from-me-canvas-1-layer-2.json",
+  "type": "AnnotationPage",
+  "label": "layer 2",
+  "items": [
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "they-can-t-take-that-away-from-me-canvas-1-layer-2-annotation-0.json",
+      "type": "Annotation",
+      "motivation": [
+        "supplementing",
+        "commenting"
+      ],
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "annotation 3",
+          "format": "text/plain",
+          "purpose": "commenting"
+        },
+        {
+          "type": "TextualBody",
+          "value": "music",
+          "format": "text/plain",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "source": "https://jaimie-r.github.io/aa-theme-test-page-1/they-can-t-take-that-away-from-me/canvas-1/canvas",
+        "selector": {
+          "type": "PointSelector",
+          "t": "120"
+        }
+      }
+    }
+  ]
+}
