@@ -1,0 +1,30 @@
+{%- if page_paths -%}
+  
+  {%- if page.layout != 'home' -%}
+    <nav class="site-nav">
+      <div class="trigger">
+        {%- if site.terms.sizem!= 0 -%}
+          Items
+        {%- endif -%}
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <div>
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if site.terms.size != 0 -%}
+        <div>
+          <a class="page-link" href="{{ 'term_index' | relative_url}}">Index</a>
+        </div>
+
+      {%- endif -%}
+  
+    </nav>
+  {%- endif -%}
+ 
+{%- endif -%}
+
