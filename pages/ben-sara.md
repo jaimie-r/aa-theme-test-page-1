@@ -1,5 +1,5 @@
 ---
-layout: default-nonnav
+layout: default-nonav
 title: ben & sara
 permalink: ben-sara
 ---

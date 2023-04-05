@@ -1,5 +1,22 @@
 <header class="site-header" role="banner">
 
+      <a href="#" id="site-nav">Toggle Div</a>
+	    <div id="myDiv">
+	      <p>This is some hidden content.</p>
+	    </div>
+	    <script>
+	      const link = document.getElementById("site-nav");
+	      const div = document.getElementById("myDiv");
+	      
+	      link.addEventListener("click", function() {
+	        if (div.style.display === "none") {
+	          div.style.display = "block";
+	        } else {
+	          div.style.display = "none";
+	        }
+	      });
+	    </script>
+	    
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.data.navigation | default: default_paths -%}
