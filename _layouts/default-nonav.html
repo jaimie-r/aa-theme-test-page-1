@@ -3,6 +3,23 @@
   {%- include head.html -%}
   <body>
   
+  	<a href="#" id="site-nav">Toggle Div</a>
+	    <div id="myDiv">
+	      <p>This is some hidden content.</p>
+	    </div>
+	    <script>
+	      const link = document.getElementById("site-nav");
+	      const div = document.getElementById("myDiv");
+	      
+	      link.addEventListener("click", function() {
+	        if (div.style.display === "none") {
+	          div.style.display = "block";
+	        } else {
+	          div.style.display = "none";
+	        }
+	      });
+	    </script>
+  
   	{%- include header-nonav.html -%}
 
     <main class="page-content" aria-label="Content">
