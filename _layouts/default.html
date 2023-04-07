@@ -2,7 +2,9 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
   <body>
-
+  
+  	<a href="#" id="site-nav-toggle">Toggle Div</a>
+	    
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
@@ -12,7 +14,20 @@
     </main>
 
     {%- include footer.html -%}
-//add code here maybe?
+	
+	<script>
+	  const link = document.getElementById("site-nav-toggle");
+	  const div = document.getElementById("site-nav-menu");
+	      
+	  link.addEventListener("click", function() {
+	    if (div.style.display === "none") {
+	      div.style.display = "block";
+	    } else {
+	      div.style.display = "none";
+	    }
+	  });
+	</script>
+	    
   </body>
 
 </html>
