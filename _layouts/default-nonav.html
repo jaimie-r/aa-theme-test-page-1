@@ -2,35 +2,31 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
   <body>
-  
-  	<a href="#" id="site-nav-toggle">Toggle Div</a>
-	    <div id="myDiv">
-	      <p>This is some hidden content.</p>
-	    </div>
-	    <script>
-	      const link = document.getElementById("site-nav-toggle");
-	      const div = document.getElementById("site-nav-menu");
-	      
-	      link.addEventListener("click", function() {
-	        if (div.style.display === "none") {
-	          div.style.display = "block";
-	        } else {
-	          div.style.display = "none";
-	        }
-	      });
-	    </script>
-  
-  	{%- include header-nonav.html -%}
+	    
+    {%- include header-nonav.html -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-      	<p>default-nonnav being used</p>
         {{ content }}
       </div>
     </main>
 
     {%- include footer.html -%}
-
+	
+	<script>
+	  const link = document.getElementById("site-nav-toggle");
+	  const div = document.getElementById("site-nav-menu");
+	  const close = document.getElementById("close-sidebar-icon");
+	      
+	  link.addEventListener("click", function() {
+	  	div.style.width = "250px";
+	  });
+	  
+	  close.addEventListener("click", function() {
+	  	div.style.width = "0";
+	  });
+	</script>
+	    
   </body>
 
 </html>
